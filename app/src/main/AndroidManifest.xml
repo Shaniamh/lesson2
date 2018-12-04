@@ -16,9 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"
-            android:label = "Second Activity"
+
+        <activity android:name=".CobaActivity"
+            android:label = "Coba Activity"
             android:parentActivityName=".MainActivity">
+
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=

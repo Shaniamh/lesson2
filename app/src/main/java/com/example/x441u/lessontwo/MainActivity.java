@@ -54,4 +54,9 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+    public void launchCobaActivity(View view) {
+        Intent intent = new Intent(this, CobaActivity.class);
+        startActivity(intent);
+    }
 }

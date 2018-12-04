@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_login">
+
+    <LinearLayout
+        android:id="@+id/layout_input_login"
+        android:layout_width="306dp"
+        android:layout_height="216dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468">
+
+        <me.omidh.ripplevalidatoredittext.RippleValidatorEditText
+            android:id="@+id/et_email_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textColorHint="#C7C7C7"
+            app:rve_backgroundColor="#10ffffff"
+            app:rve_bottomLeftCornerRadius="25dp"
+            app:rve_bottomRightCornerRadius="25dp"
+            app:rve_editTextColor="#000000"
+            app:rve_editTextGravity="left"
+            app:rve_editTextSize="14sp"
+            app:rve_errorColor="#EF5350"
+            app:rve_helperTextGravity="left"
+            app:rve_helperTextSize="12sp"
+            app:rve_hint="Masukkan Email Anda"
+            app:rve_normalColor="#C7C7C7"
+            app:rve_strokeWidth="1dp"
+            app:rve_topLeftCornerRadius="25dp"
+            app:rve_topRightCornerRadius="25dp"
+            app:rve_typingColor="#aa1a237e"
+            app:rve_validColor="#ff00c853" />
+
+        <me.omidh.ripplevalidatoredittext.RippleValidatorEditText
+            android:id="@+id/et_sandi_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColorHint="#C7C7C7"
+            app:rve_backgroundColor="#10ffffff"
+            app:rve_bottomLeftCornerRadius="25dp"
+            app:rve_bottomRightCornerRadius="25dp"
+            app:rve_editTextColor="#000000"
+            app:rve_editTextGravity="left"
+            app:rve_editTextSize="14sp"
+            app:rve_errorColor="#EF5350"
+            app:rve_helperTextGravity="left"
+            app:rve_helperTextSize="12sp"
+            app:rve_hint="Masukkan Password Anda"
+            app:rve_normalColor="#C7C7C7"
+            app:rve_strokeWidth="1dp"
+            app:rve_topLeftCornerRadius="25dp"
+            app:rve_topRightCornerRadius="25dp"
+            app:rve_typingColor="#aa1a237e"
+            app:rve_validColor="#ff00c853" />
+
+
+        <Button
+            android:id="@+id/btn_masuk_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_register_login"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
